@@ -8,6 +8,9 @@ namespace MyUnoFromXF
     {
         public App()
         {
+            //Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental");
+            Xamarin.Forms.Device.SetFlags(new String[] { "CarouselView_Experimental" });
+
             InitializeComponent();
 
             MainPage = new MainPage();
